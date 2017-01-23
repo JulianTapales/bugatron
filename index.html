@@ -4,10 +4,49 @@
     <meta charset="utf-8">
     <title>Bugatron</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .car {
+      position: absolute;
+      left: 300px;
+      bottom: 60px;
+      width: 100px;
+      height: 60px;
+    }
+    .contents {
+      position: relative;
+    }
+    .wheel {
+
+    }
+    .selection {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+    }
+  </style>
   <body>
+    <div id="car" class="car">
+      <div class="contents">
+        <img id="carBody" class="frame" src="img/sub.png" alt="">
+        <img class="wheel" src="img/wheel1.png" alt="">
+        <img class="wheel" src="img/wheel1.png" alt="">
+      </div>
+    </div>
+
+    <div class="selection">
+      <img id="water" src="img/water.png" alt=""/>
+      <img id="strong" src="img/strong.png" alt=""/>
+      <img id="lightweight" src="img/lightweight.png" alt=""/>
+      <img id="sub" src="img/sub.png" alt=""/>
+    </div>
+
     <canvas id="canvas" width="300" height="300"></canvas>
   </body>
-  
+
   <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="scripts/master.js" charset="utf-8"></script>
 </html>
